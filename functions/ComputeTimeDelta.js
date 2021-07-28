@@ -1,5 +1,12 @@
 exports.handler = function (event, context, callback) {
 
+    if (event.httpMethod != "GET") {
+        callback(null, {
+            statusCode: 200,
+            body: JSON.stringify({ message: "POST Method not supported, please use GET instead with proper start_date_str and end_date_str query parameters" })
+        });
+    }
+
 
     /*
     
@@ -65,9 +72,9 @@ exports.handler = function (event, context, callback) {
     callback(err, {
         statusCode: 200,
         body: JSON.stringify({
-            years : String(years),
-            months : String(months),
-            days : String(days)
+            years: String(years),
+            months: String(months),
+            days: String(days)
         })
-    })
+    });
 }
