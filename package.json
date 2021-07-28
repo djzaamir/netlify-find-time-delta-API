@@ -1,0 +1,30 @@
+{
+  "name": "netlify-find-time-delta-api",
+  "version": "1.0.0",
+  "description": "A simple aws lambda function powered by netlify to compute time delta between two dates",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "lambda-serve": "netlify-lambda serve functions",
+    "lambda-build": "netlify-lambda build functions"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/djzaamir/netlify-find-time-delta-API.git"
+  },
+  "keywords": [
+    "Netlify",
+    "Time-Delta",
+    "lambda-function"
+  ],
+  "author": "djzaamir",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/djzaamir/netlify-find-time-delta-API/issues"
+  },
+  "homepage": "https://github.com/djzaamir/netlify-find-time-delta-API#readme",
+  "dependencies": {
+    "install": "^0.13.0",
+    "netlify-lambda": "^2.0.12"
+  }
+}
